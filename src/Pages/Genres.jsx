@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { API_KEY, BASE_URL } from "../api/config";
 import useFetchData from "../hooks/useFetchData";
 import Spinner from "../utils/Spinner";
-import { PageLayout, Mediacard } from "../components";
+import { PageLayout} from "../components";
 import useInfiniteScroll from "../hooks/useInfiniteScroll";
 import { MediaCard } from "../components";
 
@@ -48,6 +48,7 @@ export default function Genres() {
     window.scrollTo({ top: "0" });
   }, [id]);
 
+  // eslint-disable-next-line eqeqeq
   const filterGenreTitle = genres.filter ((genre)=> genre.id == id)
 
   if (!genreList) return <Spinner />;
