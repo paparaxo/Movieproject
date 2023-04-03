@@ -140,7 +140,7 @@ export default function PersonId() {
         </div>
       </div>
       <div className="mt-4">
-        <h1 className="text-white fs-5 mt-3 mb-3">Cast</h1>
+        <h1 className="text-white fs-5 mt-3 mb-3">recommendations</h1>
         {cast.length > 0 ? (
           <Row className="gy-2">
             {cast.map((movie) => (

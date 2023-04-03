@@ -151,9 +151,8 @@ z-index: 2;
   input,
   .searchResult {
     width: 500px !important;
-  
   }
-}
+
   .mediaCard {
     flex: 0 1 170px;
   }
@@ -169,27 +168,32 @@ z-index: 2;
   .media_poster {
     width: 300px !important;
   }
+}
 
 @media (min-width: 768px) {
-  input,
+  input {
+    width: 400px
+  }
+
   .searchResult {
     width: 400px;
+  }
+
+  
+  .media_poster {
+    width: 270px;
+    
   }
 
   .mediaCard {
     border: 0 1 160px;
   }
- 
   .mediaCard:hover {
     border: 1px solid orange;
   }
 }
-.media_poster {
-  width: 270px;
-
-}
-.contentbox {
-  top: 50%;
+  .contentbox {
+    top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
